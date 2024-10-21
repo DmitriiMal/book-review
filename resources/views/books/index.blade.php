@@ -14,10 +14,10 @@
     @php
         $filters = [
             '' => 'Latest',
-            'popular_last_6months' => 'Popular Last 6 Month',
             'popular_last_month' => 'Popular Last Month',
+            'popular_last_6months' => 'Popular Last 6 Month',
             'highest_rated_last_month' => 'Highest Rated Last Month',
-            'popular_last_6months' => 'Highest Rated Last 6 Month',
+            'highest_rated_last_6months' => 'Highest Rated Last 6 Month',
         ]
     @endphp
 
@@ -42,7 +42,7 @@
     </div>
     <div>
         <div class="book-rating">
-        {{number_format($book->reviews_avr_rating, 1)}}
+        {{number_format($book->reviews_avg_rating, 1)}}
         </div>
         <div class="book-review-count">
         out of {{ $book->reviews_count }} {{Str::plural('review', $book->reviews_count)}}
