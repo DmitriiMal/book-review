@@ -9,6 +9,25 @@
     <a href="{{route('books.index')}}" class="btn h-10">Clear</a>
 </form>
 
+<div class="filter-container mb-4 flex">
+    @php
+        $filters = [
+            '' => 'Latest',
+            'popular_last_6months' => 'Popular Last 6 Month',
+            'popular_last_month' => 'Popular Last Month',
+            'highest_rated_last_month' => 'Highest Rated Last Month',
+            'popular_last_6months' => 'Highest Rated Last 6 Month',
+        ]
+    @endphp
+
+    @foreach ( $filters as $key => $label )
+    <a href="{{route('books.index', ['filter' => $key])}}" class="{{ request('filter') === $key ? 'filter-item-active' : 'filter-item'}}">
+        {{ $label}}
+    </a>
+
+    @endforeach
+</div>
+
 <ul>
 @forelse ($books as $book)
 <li class="mb-4">
