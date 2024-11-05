@@ -62,6 +62,6 @@
 @endforelse
 </ul>
 @if ($books->count())
-{{-- {{ $books->links() }} --}}
+{{ $books->links() }}
 @endif
 @endsection
