@@ -7,6 +7,16 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Built With
+
+<p align="center">
+    <a href="https://laravel.com" target="_blank"><img src="https://img.shields.io/badge/Laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel"></a>
+    <a href="https://www.mysql.com" target="_blank"><img src="https://img.shields.io/badge/MySQL-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></a>
+    <a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/Tailwindcss-%2339BDF8.svg?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwindcss"></a>
+
+
+</p>
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
