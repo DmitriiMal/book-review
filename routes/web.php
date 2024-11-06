@@ -13,7 +13,8 @@ Route::resource('books', BookController::class)
 
 Route::resource('books.reviews', ReviewController::class)
     ->scoped(['review' => 'book'])
-    ->only(['create', 'store']);
+    ->only(['create', 'store'])
+    ->middleware('throttle:reviews');
 
 
 Route::fallback(fn() => redirect('books'));
